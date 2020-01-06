@@ -64,6 +64,7 @@ $(".city-search").on("click", function(event){
             url: forecastQueryURL,
             method: "GET"  
         }).then(function(response) {
+            $(".card-row").empty();
             console.log(response)
             for (var i = 1; i < 6; i++) {
                 var fiveDayCard = $("<div>");
