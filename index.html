@@ -10,10 +10,11 @@
  </head>
 
  <body>
-        <nav class="navbar navbar-light bg-light">
+    <div id="body">
+        <nav class="navbar navbar-dark bg-dark">
             <span class="navbar-brand mb-0 h1">Weather Dashboard</span>
         </nav>
-        <div class="row">
+        <div class="row" id="all-container">
             <div class="col-md-2">
                 <div>Search for a city:</div>
                 <div class="input-group mb-3">
@@ -22,24 +23,22 @@
                         <button class="btn btn-outline-secondary city-search" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
                     </div>
                 </div>
-                <div class="list-group">
-
-                </div>
+                <div class="list-group"></div>
             </div>
             <div class="col-md-10">
                 <div class="row">
                     <div class="card col-md-10">
                         <div class="card-body">
                             <div class="row">
-                                <h5 class="current-city-name"></h5>
-                                <h5 class="current-date"></h5>
-                                <h5 class="weather-icon"></h5>
+                                <h3 class="current-city-name"></h3>
+                                <h3 class="current-date"></h3>
+                                <img class="weather-icon"></img>
                             </div>
                             <div id="city-weather">
-                                <div id="city-temp"></div>
-                                <div id="city-humidity"></div>
-                                <div id="city-wind"></div>
-                                <div id="city-uv"></div>
+                                <p id="city-temp"></p>
+                                <p id="city-humidity"></p>
+                                <p id="city-wind"></p>
+                                <p id="city-uv"></p>
                             </div>
                         </div>
                     </div>
@@ -47,48 +46,12 @@
                 <div class="row">
                     <h4>5-Day Forecast:</h4>
                 </div>
-                <div class="row">
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                        <div class="card-header date"></div>
-                        <div class="card-body">
-                            <h6 class="card-title icon"></h6>
-                            <p class="card-text weather"></p>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                        <div class="card-header date"></div>
-                        <div class="card-body">
-                            <h6 class="card-title icon"></h6>
-                            <p class="card-text weather"></p>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                        <div class="card-header date"></div>
-                        <div class="card-body">
-                            <h6 class="card-title icon"></h6>
-                            <p class="card-text weather"></p>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                        <div class="card-header date"></div>
-                        <div class="card-body">
-                            <h6 class="card-title icon"></h6>
-                            <p class="card-text weather"></p>
-                        </div>
-                    </div>
-                    <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                        <div class="card-header date"></div>
-                        <div class="card-body">
-                            <h6 class="card-title icon"></h6>
-                            <p class="card-text weather"></p>
-                        </div>
-                    </div>
-                </div>
+                <div class="row card-row"></div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="./script.js"></script>
-      
-    
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>    
     </body>
 </html>
