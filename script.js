@@ -11,7 +11,7 @@ var currentCity = "";
 
 var currentDate = moment().format("MM/DD/YY");
 
-var apiKey = "166a433c57516f51dfab1f7edaed8413";
+var apiKey = "b3577882b000eb4ebfad4ae9dac218a2";
 
 // currentCityWeather();
 
